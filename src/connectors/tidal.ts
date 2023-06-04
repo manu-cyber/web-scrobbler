@@ -25,7 +25,18 @@ Connector.getUniqueID = () => {
 	return null;
 };
 
+const artistFilter = MetadataFilter.createFilter({
+	artist: concatArtists
+});
+
 Connector.artistSelector = `${Connector.playerSelector} span.artist-link`;
+Connector.applyFilter(artistFilter);
+
+function concatArtists() {
+	// TODO: All I need to do is to put an array with the elements inside `artistSelector` here. I think.
+	//return Util.joinArtists(artists);
+	return "foobar";
+}
 
 Connector.albumSelector = [
 	'#nowPlaying div.react-tabs a[href^="/album/"]',
