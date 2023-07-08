@@ -25,7 +25,7 @@ const trackSelectors = [
 	'.jwrowV2.playing .ttl',
 
 	// https://archive.org/details/lp_everybody-knows-this-is-nowhere_neil-young-crazy-horse-robin-lane
-	'.audio-track-list .selected .track-title',
+	'.track-list .selected .track-title',
 ];
 const albumSelector = '.thats-left > h1 [itemprop=name]';
 const tracksSelector = '.jwrowV2 .ttl';
